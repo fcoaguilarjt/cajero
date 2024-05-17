@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    width: 100%;
+    padding: 20px;
+    background-color: #C8CACC;
+}
+
+h2{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 6px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #F9F9F9;
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 400px;
+    flex-wrap: wrap;
+    border-right: 3px dashed black;
+    margin-top: 10px;
+
+}
+
+.botonbarra{
+    width: 300px;
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+main{
+    display: flex;
+}
+
+.operaciones{
+    margin-left: 200px;
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+.confirmacion{
+    width: 100px;
+    height: 35px;
+}
+
+.cajadetexto{
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+}

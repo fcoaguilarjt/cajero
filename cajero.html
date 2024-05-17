@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Bienvendo al Banco DevF</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <header>
+    <h1>Dev.F Bank</h1>
+    </header>
+
+    <section>
+        <h2>
+            Elige que operación deseas realizar
+        </h2>
+    </section>
+
+    <main>
+        
+        <nav class="barra">
+            <div>
+                <button id="btnConsultar" onclick="consultar();" class="botonbarra">
+                    Consultar saldo
+                </button>
+                
+            </div>
+            
+            <div>
+                <button id="btnRetirar" class="botonbarra">
+                    Hacer un retiro
+                </button>
+            
+            </div>
+            
+            <div>
+                <button id="btnDepositar" class="botonbarra">
+                    Depositar
+                </button>
+            
+            </div>
+            
+            <div>
+                <button id="btn_exit" onclick="mostrarInicio();" class="botonbarra">
+                    Cerrar Sesion
+                </button>
+            </div>
+        </nav>
+    
+        <section class="operaciones">
+            <div id="seccionConsultar" style="display: none;">
+                <p id="saldoActual"></p>
+            </div>
+            
+            <div id="seccionRetirar" style="display: none;">
+                <label for="montoaRetirar">Monto a retirar</label>
+                <input type="number" id="montoaRetirar" class="cajadetexto">
+                <button id="confirmarRetiro" onclick="retirar();" class="confirmacion">
+                    Confirmar
+                </button>
+                
+            </div>
+            <div id="seccionDepositar" style="display: none;">
+                <label for="montoaDepositar">Monto a depositar</label>
+                <input type="number" id="montoaDepositar" class="cajadetexto">
+                <button id="confirmarDeposito" onclick="depositar();" class="confirmacion">
+                    Confirmar
+                </button>
+            </div>
+    
+        </section>
+
+
+    </main>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
